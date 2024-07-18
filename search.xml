@@ -179,7 +179,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_total: false</span><br></pre></td></tr></table></figure>
 
 <p>设置item_text_total为true</p>
-<h4 id="文章阅读次数"><a href="#文章阅读次数" class="headerlink" title="文章阅读次数"></a>文章阅读次数</h4><h2 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h2><p>修改 主题_config.yml</p>
+<h4 id="文章阅读次数"><a href="#文章阅读次数" class="headerlink" title="文章阅读次数"></a>文章阅读次数</h4><p>修改 主题_config.yml</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Show Views/Visitors of the website/page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br><span class="line">    total_visitors: true</span><br><span class="line">    total_visitors_icon: user</span><br><span class="line">    total_views: true</span><br><span class="line">    total_views_icon: eye</span><br><span class="line">    post_views: true</span><br><span class="line">    post_views_icon: eye</span><br></pre></td></tr></table></figure>
 
 <p>设置enable为true即可。</p>
