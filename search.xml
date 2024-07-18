@@ -73,24 +73,82 @@
       </tags>
   </entry>
   <entry>
+    <title>美化博客</title>
+    <url>/2024/07/18/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>NexT 提供了两种方式：</p>
+<p>NPM安装，仅需在根目录下配置_config.next.yml即可，不过此种方式不适合于源码修改；</p>
+<p>GIT安装，安装源码到 &#x2F;path&#x2F;to&#x2F;themes&#x2F;</p>
+<h4 id="GIT安装"><a href="#GIT安装" class="headerlink" title="GIT安装"></a>GIT安装</h4><p>下载最新的master分支：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h4 id="NPM安装"><a href="#NPM安装" class="headerlink" title="NPM安装"></a>NPM安装</h4><p>下载最新的NexT主题</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure>
+
+<p>主题会安装到node_modules中，使用cp -r node_modules&#x2F;hexo-theme-next&#x2F;* themes&#x2F;next&#x2F;复制主题。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>修改根目录的  _config.yml ，配置当前使用主题：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line"># theme: landscape</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>修改信息</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 网站标题</span><br><span class="line">subtitle: &#x27;&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 作者名字</span><br><span class="line">language: zh-CN 语音</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line"># scheme: Muse</span><br><span class="line"># scheme: Mist</span><br><span class="line"># scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<p>用哪一个就删去前面的#</p>
+<h4 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h4><p>下载</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>根目录的config.yml</p>
+<p>在底部添加如下设置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
+
+<p>主题文件夹config.yml</p>
+<p>打开<code>Local Search</code>功能</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: false</span><br><span class="line">  # If auto, trigger search by changing input.</span><br><span class="line">  # If manual, trigger search by pressing enter key or search button.</span><br><span class="line">  trigger: auto</span><br><span class="line">  # Show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # Unescape html strings to the readable one.</span><br><span class="line">  unescape: false</span><br><span class="line">  # Preload the search data when the page loads.</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure>
+
+<h4 id="字数"><a href="#字数" class="headerlink" title="字数"></a>字数</h4><p>安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-word-counter</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>配置 根目录config.yml 在文件尾部添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br><span class="line">  exclude_codeblock: false</span><br><span class="line">  awl: 4</span><br><span class="line">  wpm: 275</span><br><span class="line">  suffix: &quot;mins.&quot;</span><br></pre></td></tr></table></figure>
+
+<p>主题config.yml</p>
+<p>修改</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_total: false</span><br></pre></td></tr></table></figure>
+
+<p>设置item_text_total为true</p>
+<h4 id="文章阅读次数"><a href="#文章阅读次数" class="headerlink" title="文章阅读次数"></a>文章阅读次数</h4><h2 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h2><p>修改 主题_config.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Show Views/Visitors of the website/page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br><span class="line">    total_visitors: true</span><br><span class="line">    total_visitors_icon: user</span><br><span class="line">    total_views: true</span><br><span class="line">    total_views_icon: eye</span><br><span class="line">    post_views: true</span><br><span class="line">    post_views_icon: eye</span><br></pre></td></tr></table></figure>
+
+<p>设置enable为true即可。</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>NexT</tag>
+        <tag>美化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>免费白嫖microsoft 365</title>
     <url>/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/</url>
     <content><![CDATA[<h4 id="申请准备"><a href="#申请准备" class="headerlink" title="申请准备"></a>申请准备</h4><h5 id="嫖前准备"><a href="#嫖前准备" class="headerlink" title="嫖前准备"></a>嫖前准备</h5><p>由于注册过程中需要验证手机号，所以提前准备fq软件。如果没有可以</p>
-<p>[^点我]: <a href="https://steampp.net/download">Watt Toolkit - 下载 (steampp.net)</a>下载Watt Toolkit(原steam++)</p>
-<p>下载完成后安装并打开，滑动找到“国外验证码平台”，勾选会点击一键加速。</p>
-<p>[^下载]: <a href="https://e5renew.com/#download">E5 Renew Plus 官方网站</a></p>
+<p><a href="https://steampp.net/download">Watt Toolkit 下载</a></p>
+<p><a href="https://e5renew.com/#download">E5 Renew Plus 官方网站</a></p>
 <p>下载第一个，下载完成后解压，打开即可。</p>
 <h4 id="开始申请"><a href="#开始申请" class="headerlink" title="开始申请"></a>开始申请</h4><h5 id="饭前小菜"><a href="#饭前小菜" class="headerlink" title="饭前小菜"></a>饭前小菜</h5><p>访问</p>
+<p><a href="https://developer.microsoft.com/en-us/microsoft-365/dev-program">开发人员计划</a></p>
 <p>点击“join now（现在加入）。Country&#x2F;Region（国家&#x2F;地区）选择China(中国)，Company(公司)随便填，Language preference(语言首选项)中文(简体)，下面勾选第一个，点Next(下一步),这个随便，点Next(下一步),这个也随便选。</p>
 <h5 id="配置沙盒"><a href="#配置沙盒" class="headerlink" title="配置沙盒"></a>配置沙盒</h5><p>这个一定要选第二个</p>
-<p><img src="https://img1.imgtp.com/2023/08/09/m6SZvooS.png" alt="屏幕截图 2023-08-09 195437.png"></p>
+<p><img src="https://img1.imgtp.com/2023/08/09/m6SZvooS.png"></p>
 <p>国家选中国，剩下的自己填写，然后验证手机号，短信可能会有点慢，所以耐心等待。</p>
 <p>注册成功就是这个效果</p>
-<p><img src="https://img1.imgtp.com/2023/08/09/eIl68s2W.png" alt="屏幕截图 2023-08-09 200148.png"></p>
+<p><img src="https://img1.imgtp.com/2023/08/09/eIl68s2W.png"></p>
 <h4 id="添加子账号并使用microsoft365"><a href="#添加子账号并使用microsoft365" class="headerlink" title="添加子账号并使用microsoft365"></a>添加子账号并使用microsoft365</h4><h5 id="添加子账号"><a href="#添加子账号" class="headerlink" title="添加子账号"></a>添加子账号</h5><p>打开”MS365 E5 Renew Plus”点击office 365管理员中心，登录你的管理员账号，点击上面的“add user(添加用户)”填写基本信息，许可证选择”Microsoft 365 E5 Developer (without Windows and Audio Conferencing)”然后可选设置不管，点击“Finish adding(完成创建)”</p>
-<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><p>登录你的子账号，点击右上的install apps安装并登录即可。</p>
-<h4 id="续订"><a href="#续订" class="headerlink" title="续订"></a>续订</h4><h5 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h5><p>打开”MS365 E5 Renew Plus”看到那两个关闭双重验证了吗，安他的说明关闭即可。</p>
-<p>以下内容来自软件作者的教程</p>
+<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><p><a href="https://office.com/">点击</a></p>
+<p>登录你的子账号，点击右上的install apps安装并登录即可。</p>
+<h4 id="续订"><a href="#续订" class="headerlink" title="续订"></a>续订</h4><h5 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h5><p>打开”MS365 E5 Renew Plus”关闭双重验证。</p>
+<p>以下是软件作者的教程</p>
 <h2 id="1-注册Azure应用程序"><a href="#1-注册Azure应用程序" class="headerlink" title="1 注册Azure应用程序"></a>1 注册Azure应用程序</h2><h3 id="1-1-应用注册"><a href="#1-1-应用注册" class="headerlink" title="1.1 应用注册"></a>1.1 应用注册</h3><ol>
 <li><a href="https://portal.azure.com/#home">点击登录 Azure</a>或<a href="https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">点击直接进入Azure应用注册</a>，登录账号使用申请到的Microsoft 365 E5的<strong>管理员账户</strong>（账户名类似<a href="mailto:XXXX@YYYY.onmicrosoft.com">XXXX@YYYY.onmicrosoft.com</a>格式）。</li>
 <li>登录完成后点击右上角的“门户”按钮进入Azure管理中心，在搜索栏内输入“应用注册”，点击进入<a href="https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">（若应用注册搜索不到请点击此处直接进入）</a>。</li>
@@ -123,7 +181,7 @@
 <p><a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/28.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/28.png" alt="img"></a></p>
 <h3 id="3-2-开始运行"><a href="#3-2-开始运行" class="headerlink" title="3.2 开始运行"></a>3.2 开始运行</h3><p>点击 “开始运行”</p>
 <p><a href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/29.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/29.png" alt="img"></a></p>
-<p>以上内容来自软件作者的教程</p>
+<p>以上是软件作者的教程</p>
 <h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><p>记得经常使用，更改密码，不要不管</p>
 ]]></content>
       <categories>
