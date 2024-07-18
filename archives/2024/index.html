@@ -306,30 +306,39 @@
   </span>
 </div>
 
-2024-07-17 16:35:02
+<!--添加网站运行时间 -->
+<% if (theme.running_time && theme.running_time.enable && theme.running_time.create_time){ %>
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+        var now = new Date();
 
-本站已运行：<span id=span_dt_dt style="color: #2F889A;"></span>
-<script language=javascript>
-    function show_date_time(){
-        window.setTimeout("show_date_time()", 1000);
-        // 这里修改站点开启日期
-        BirthDay=new Date("17/07/2024 16:35:02");
-        today=new Date();
-        timeold=(today.getTime()-BirthDay.getTime());
-        sectimeold=timeold/1000
-        secondsold=Math.floor(sectimeold);
-        msPerDay=24*60*60*1000
-        e_daysold=timeold/msPerDay
-        daysold=Math.floor(e_daysold);
-        e_hrsold=(e_daysold-daysold)*24;
-        hrsold=Math.floor(e_hrsold);
-        e_minsold=(e_hrsold-hrsold)*60;
-        minsold=Math.floor((e_hrsold-hrsold)*60);
-        seconds=Math.floor((e_minsold-minsold)*60);
-        span_dt_dt.innerHTML='<font style=color:#C40000>'+daysold+'</font> 天 <font style=color:#C40000>'+hrsold+'</font> 时 <font style=color:#C40000>'+minsold+'</font> 分 <font style=color:#C40000>'+seconds+'</font> 秒';
-    }
-    show_date_time();
-</script>
+        function createtime() {
+            // var create_time = '<%- theme.running_time.create_time %>';
+            var create_time = new Date("17/07/2024 16:35:02");// 网站上线时间 
+            now.setTime(now.getTime() + 250);
+            days = (now - create_time) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
+            hours = (now - create_time) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if (String(hnum).length == 1) {
+                hnum = "0" + hnum;
+            }
+            minutes = (now - create_time) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if (String(mnum).length == 1) {
+                mnum = "0" + mnum;
+            }
+            seconds = (now - create_time) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if (String(snum).length == 1) {
+                snum = "0" + snum;
+            }
+            document.getElementById("timeDate").innerHTML = " | 本站已运行 " + dnum + " 天 ";
+            document.getElementById("times").innerHTML = hnum + " 时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 250);
+    </script>
+<% } %>
 <div class="busuanzi-count">
     <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
