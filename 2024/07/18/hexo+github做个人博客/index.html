@@ -19,23 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="加号の小破站">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="环境搭建Node.js: [https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn]: https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn	“https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn“ Git: [https:&#x2F;&#x2F;git-scm.com&#x2F;downloads]: https:&#x2F;&#x2F;git-scm.com&#x2F;downloads	“https:&#x2F;&#x2F;git-scm.com&#x2F;downloads“ 下载 Node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HEXO+GITHUB做个人博客">
+<meta property="og:url" content="http://example.com/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="加号の小破站">
+<meta property="og:description" content="环境搭建Node.js: [https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn]: https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn	“https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn“ Git: [https:&#x2F;&#x2F;git-scm.com&#x2F;downloads]: https:&#x2F;&#x2F;git-scm.com&#x2F;downloads	“https:&#x2F;&#x2F;git-scm.com&#x2F;downloads“ 下载 Node">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-07-18T03:58:14.642Z">
+<meta property="article:modified_time" content="2024-04-18T13:10:52.911Z">
 <meta property="article:author" content="Wang Jiahao">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/","path":"2024/07/18/hexo+github做个人博客/","title":"HEXO+GITHUB做个人博客"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>加号の小破站</title>
+<title>HEXO+GITHUB做个人博客 | 加号の小破站</title>
   
 
 
@@ -76,7 +80,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">加号の小破站</h1>
+      <p class="site-title">加号の小破站</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -129,7 +133,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -142,6 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5-Github"><span class="nav-number">2.</span> <span class="nav-text">连接 Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-SSH-%E5%AF%86%E5%8C%99"><span class="nav-number">3.</span> <span class="nav-text">创建 SSH 密匙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AF%86%E5%8C%99"><span class="nav-number">4.</span> <span class="nav-text">添加密匙</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E8%BF%9E%E6%8E%A5"><span class="nav-number">4.1.</span> <span class="nav-text">验证连接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-Github-Pages-%E4%BB%93%E5%BA%93"><span class="nav-number"></span> <span class="nav-text">创建 Github Pages 仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85-Hexo-%E5%8D%9A%E5%AE%A2%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.</span> <span class="nav-text">本地安装 Hexo 博客程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">1.1.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo 初始化和本地预览</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2-Hexo-%E5%88%B0-GitHub-Pages"><span class="nav-number">2.</span> <span class="nav-text">部署 Hexo 到 GitHub Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">开始使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%EF%BC%9A"><span class="nav-number">3.1.</span> <span class="nav-text">发布文章：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6"><span class="nav-number">3.1.1.</span> <span class="nav-text">下载软件</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A0%B4%E8%A7%A3%EF%BC%9A"><span class="nav-number">3.2.</span> <span class="nav-text">破解：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%86%99%E6%96%87%E7%AB%A0"><span class="nav-number">3.2.1.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0"><span class="nav-number">3.2.2.</span> <span class="nav-text">发布文章</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE"><span class="nav-number">3.2.3.</span> <span class="nav-text">访问</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -181,266 +186,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/18/Windows11%E7%BE%8E%E5%8C%96/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://weavatar.com/avatar/cc50c66b69172595a89ad1dfc2c55161d27940c10e6f33428148fcb05b7c1cb8">
-      <meta itemprop="name" content="Wang Jiahao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="加号の小破站">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 加号の小破站">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/18/Windows11%E7%BE%8E%E5%8C%96/" class="post-title-link" itemprop="url">Windows美化</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-18 11:58:14" itemprop="dateCreated datePublished" datetime="2024-07-18T11:58:14+08:00">2024-07-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-18 21:10:40" itemprop="dateModified" datetime="2024-04-18T21:10:40+08:00">2024-04-18</time>
-    </span>
-
-  
-    <span id="/2024/07/18/Windows11%E7%BE%8E%E5%8C%96/" class="post-meta-item twikoo_visitors" data-flag-title="Windows美化" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span id="twikoo_visitors"></span>
-    </span>
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>138</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="鼠标美化"><a href="#鼠标美化" class="headerlink" title="鼠标美化"></a>鼠标美化</h4><p>到<a target="_blank" rel="noopener" href="https://github.com/PSGitHubUser1/Windows-11-Cursor-Concept-Pro-v2.x/releases">发布 ·PSGitHubUser1&#x2F;Windows-11-Cursor-Concept-Pro-v2.x</a>下载W11-CC-V2.2-HDPI-by-Jepri.zip，下载完成后右键.inf文件，点击安装即可。</p>
-<h4 id="桌面整理"><a href="#桌面整理" class="headerlink" title="桌面整理"></a>桌面整理</h4><p>下载并安装<a target="_blank" rel="noopener" href="https://www.coodesker.com/">酷呆桌面 - 桌面整理工具 (coodesker.com)</a>，然后右键—酷呆桌面—新建盒子，把软件快捷方式放在里面，剩余功能自己探索。</p>
-<h4 id="任务栏美化"><a href="#任务栏美化" class="headerlink" title="任务栏美化"></a>任务栏美化</h4><p>下载并安装<a target="_blank" rel="noopener" href="https://www.stardock.com/products/start11/">Stardock Start11：在Windows 10和11中恢复经典的“开始”菜单。</a>然后自己设置成想要的样子。</p>
-<h4 id="壁纸"><a href="#壁纸" class="headerlink" title="壁纸"></a>壁纸</h4><p>自己在网上挑选</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://weavatar.com/avatar/cc50c66b69172595a89ad1dfc2c55161d27940c10e6f33428148fcb05b7c1cb8">
-      <meta itemprop="name" content="Wang Jiahao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="加号の小破站">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 加号の小破站">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/" class="post-title-link" itemprop="url">免费白嫖microsoft 365</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-07-18 11:58:14" itemprop="dateCreated datePublished" datetime="2024-07-18T11:58:14+08:00">2024-07-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-18 21:10:20" itemprop="dateModified" datetime="2024-04-18T21:10:20+08:00">2024-04-18</time>
-    </span>
-
-  
-    <span id="/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/" class="post-meta-item twikoo_visitors" data-flag-title="免费白嫖microsoft 365" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span id="twikoo_visitors"></span>
-    </span>
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.1k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="申请准备"><a href="#申请准备" class="headerlink" title="申请准备"></a>申请准备</h4><h5 id="嫖前准备"><a href="#嫖前准备" class="headerlink" title="嫖前准备"></a>嫖前准备</h5><p>由于注册过程中需要验证手机号，所以提前准备fq软件。如果没有可以</p>
-<p>[^点我]: <a target="_blank" rel="noopener" href="https://steampp.net/download">Watt Toolkit - 下载 (steampp.net)</a>下载Watt Toolkit(原steam++)</p>
-<p>下载完成后安装并打开，滑动找到“国外验证码平台”，勾选会点击一键加速。</p>
-<p>[^下载]: <a target="_blank" rel="noopener" href="https://e5renew.com/#download">E5 Renew Plus 官方网站</a></p>
-<p>下载第一个，下载完成后解压，打开即可。</p>
-<h4 id="开始申请"><a href="#开始申请" class="headerlink" title="开始申请"></a>开始申请</h4><h5 id="饭前小菜"><a href="#饭前小菜" class="headerlink" title="饭前小菜"></a>饭前小菜</h5><p>访问</p>
-<p>点击“join now（现在加入）。Country&#x2F;Region（国家&#x2F;地区）选择China(中国)，Company(公司)随便填，Language preference(语言首选项)中文(简体)，下面勾选第一个，点Next(下一步),这个随便，点Next(下一步),这个也随便选。</p>
-<h5 id="配置沙盒"><a href="#配置沙盒" class="headerlink" title="配置沙盒"></a>配置沙盒</h5><p>这个一定要选第二个</p>
-<p><img src="https://img1.imgtp.com/2023/08/09/m6SZvooS.png" alt="屏幕截图 2023-08-09 195437.png"></p>
-<p>国家选中国，剩下的自己填写，然后验证手机号，短信可能会有点慢，所以耐心等待。</p>
-<p>注册成功就是这个效果</p>
-<p><img src="https://img1.imgtp.com/2023/08/09/eIl68s2W.png" alt="屏幕截图 2023-08-09 200148.png"></p>
-<h4 id="添加子账号并使用microsoft365"><a href="#添加子账号并使用microsoft365" class="headerlink" title="添加子账号并使用microsoft365"></a>添加子账号并使用microsoft365</h4><h5 id="添加子账号"><a href="#添加子账号" class="headerlink" title="添加子账号"></a>添加子账号</h5><p>打开”MS365 E5 Renew Plus”点击office 365管理员中心，登录你的管理员账号，点击上面的“add user(添加用户)”填写基本信息，许可证选择”Microsoft 365 E5 Developer (without Windows and Audio Conferencing)”然后可选设置不管，点击“Finish adding(完成创建)”</p>
-<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><p>登录你的子账号，点击右上的install apps安装并登录即可。</p>
-<h4 id="续订"><a href="#续订" class="headerlink" title="续订"></a>续订</h4><h5 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h5><p>打开”MS365 E5 Renew Plus”看到那两个关闭双重验证了吗，安他的说明关闭即可。</p>
-<p>以下内容来自软件作者的教程</p>
-<h2 id="1-注册Azure应用程序"><a href="#1-注册Azure应用程序" class="headerlink" title="1 注册Azure应用程序"></a>1 注册Azure应用程序</h2><h3 id="1-1-应用注册"><a href="#1-1-应用注册" class="headerlink" title="1.1 应用注册"></a>1.1 应用注册</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://portal.azure.com/#home">点击登录 Azure</a>或<a target="_blank" rel="noopener" href="https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">点击直接进入Azure应用注册</a>，登录账号使用申请到的Microsoft 365 E5的<strong>管理员账户</strong>（账户名类似<a href="mailto:XXXX@YYYY.onmicrosoft.com">XXXX@YYYY.onmicrosoft.com</a>格式）。</li>
-<li>登录完成后点击右上角的“门户”按钮进入Azure管理中心，在搜索栏内输入“应用注册”，点击进入<a target="_blank" rel="noopener" href="https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">（若应用注册搜索不到请点击此处直接进入）</a>。</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/5.png" alt="img"></p>
-<p>3.单击“新注册”按钮</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/6.png" alt="img"></p>
-<p>4.配置应用 应用名称随意写、注意可访问性选项选择最后一项、重定向URL暂时不填 、完成后点击注册</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/7.png" alt="img"></p>
-<h3 id="1-2-配置应用重定向URL（身份验证）"><a href="#1-2-配置应用重定向URL（身份验证）" class="headerlink" title="1.2 配置应用重定向URL（身份验证）"></a>1.2 配置应用重定向URL（身份验证）</h3><p>1.先点击“概述”，然后点击“添加重定向URL”，进入重定向URL配置界面，<strong>下图中的应用程序(客户端)ID即为”客户端ID”</strong>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/8.png" alt="img"></p>
-<p>2.点击“添加平台”，再点击“移动和桌面应用程序”，</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/9.png" alt="img"></p>
-<p>3.继续勾选中第一个URL，最后点击底部的“配置”，该URL为“<a target="_blank" rel="noopener" href="https://login.microsoftonline.com/common/oauth2/nativeclient%E2%80%9D%E4%B9%9F%E5%8F%AF%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E3%80%82">https://login.microsoftonline.com/common/oauth2/nativeclient”也可手动添加。</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/10.png" alt="img"></p>
-<p>4.配置默认客户端类型将应用程序视为公共客户端 点击切换按钮为“是” ，最后点击“保存”按钮保存。</p>
-<h3 id="2-1-选择“委托的权限-用户登录-”类型的API"><a href="#2-1-选择“委托的权限-用户登录-”类型的API" class="headerlink" title="2.1 选择“委托的权限(用户登录)”类型的API"></a>2.1 选择“委托的权限(用户登录)”类型的API</h3><h4 id="2-1-1-使用程序自动请求配置API权限"><a href="#2-1-1-使用程序自动请求配置API权限" class="headerlink" title="2.1.1 使用程序自动请求配置API权限"></a>2.1.1 使用程序自动请求配置API权限</h4><p>1.点击“添加账号”，API调用方式选择“登陆调用”，正确填写“MS365 E5账号”和“应用程序（客户端）ID”后点击“启动自动授权”。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/12.png" alt="img"></p>
-<p>2.在弹出的登陆页面中输入你的管理员账户名和密码登录（<strong>该账户必须为全局管理员账户且拥有该客户端ID的控制权限</strong>），登录成功时弹出“请求征得许可界面”，滚动到页面最底部勾选“代表组织同意”，最后点击“接受”。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/13.png" alt="img"></p>
-<p>3.判断是否添加API权限成功：首先程序提示授权成功，其次用管理员账户登录Azure查看应用的API权限，发现所有需求的权限全部添加或可以成功调用均视为已添加成功。<br>ng)</p>
-<h3 id="3-1-添加一个账户"><a href="#3-1-添加一个账户" class="headerlink" title="3.1 添加一个账户"></a>3.1 添加一个账户</h3><p>点击 “开始运行”-“添加账号”</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/25.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/25.png" alt="img"></a></p>
-<p>这里可以切换 API 调用方式但也需要更改对应的填写内容</p>
-<p>登录调用方式填写</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/26.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/26.png" alt="img"></a></p>
-<p>非登录调用方式填写</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/27.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/27.png" alt="img"></a></p>
-<p>最后点击确定</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/28.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/28.png" alt="img"></a></p>
-<h3 id="3-2-开始运行"><a href="#3-2-开始运行" class="headerlink" title="3.2 开始运行"></a>3.2 开始运行</h3><p>点击 “开始运行”</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/29.png"><img src="https://cdn.jsdelivr.net/gh/wdm1732418365/CDN/e5plus/29.png" alt="img"></a></p>
-<p>以上内容来自软件作者的教程</p>
-<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><p>记得经常使用，更改密码，不要不管</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -454,13 +210,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 加号の小破站">
+      <meta itemprop="name" content="HEXO+GITHUB做个人博客 | 加号の小破站">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">HEXO+GITHUB做个人博客</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          HEXO+GITHUB做个人博客
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -481,6 +237,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span id="/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-meta-item twikoo_visitors" data-flag-title="HEXO+GITHUB做个人博客" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
@@ -512,8 +275,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>Node.js:</p>
+    <div class="post-body" itemprop="articleBody"><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>Node.js:</p>
 <p>[<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn]">https://nodejs.org/zh-cn]</a>: <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">https://nodejs.org/zh-cn</a>	“<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">https://nodejs.org/zh-cn</a>“</p>
 <p>Git:</p>
 <p>[<a target="_blank" rel="noopener" href="https://git-scm.com/downloads]">https://git-scm.com/downloads]</a>: <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>	“<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>“</p>
@@ -595,7 +357,6 @@
 <p>我的网站，示例</p>
 <p>[<a href="https://chen90922.github.io]">https://chen90922.github.io]</a>: <a target="_blank" rel="noopener" href="https://chen90922.github.io/">https://chen90922.github.io</a>	“<a target="_blank" rel="noopener" href="https://chen90922.github.io/">https://chen90922.github.io</a>“</p>
 
-      
     </div>
 
     
@@ -603,8 +364,18 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/" rel="next" title="免费白嫖microsoft 365">
+                  免费白嫖microsoft 365 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -613,6 +384,8 @@
 
 
 
+
+    <div class="comments"><div id="twikoo-comments"></div></div>
 </div>
   </main>
 
