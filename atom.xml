@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-04T11:11:18.529Z</updated>
+  <updated>2024-10-04T12:11:07.804Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>免费虚拟主机</title>
+    <link href="http://example.com/2024/10/04/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"/>
+    <id>http://example.com/2024/10/04/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</id>
+    <published>2024-10-04T11:39:25.860Z</published>
+    <updated>2024-10-04T12:11:07.804Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>服务商</th><th>存储空间</th><th>流量</th><th>域名</th><th>网址</th><th>备注</th></tr></thead><tbody><tr><td>Free Hostia</td><td>250MB</td><td>6GB</td><td>可绑定5个</td><td><a href="https://www.freehostia.com/">https://www.freehostia.com/</a></td><td>无</td></tr><tr><td>Pro Free Host</td><td>5G</td><td>无限</td><td>免费子域+自定义域名</td><td><a href="https://profreehost.com/">https://profreehost.com/</a></td><td>byet分销</td></tr><tr><td>InfinityFree</td><td>5GB</td><td>无限</td><td>免费子域+自定义域名</td><td><a href="https://www.infinityfree.com/">https://www.infinityfree.com/</a></td><td>byet分销</td></tr><tr><td>HZ</td><td>1GB</td><td>无限</td><td>可绑定1个</td><td><a href="https://hz.cz/">https://hz.cz/</a></td><td>SSL不能用</td></tr><tr><td>Free Web Hosting Area</td><td>1500MB</td><td>无限</td><td>免费子域+自定义域名</td><td><a href="https://freewha.com/">https://freewha.com/</a></td><td>有广告</td></tr><tr><td>Nethely</td><td>256MB</td><td>未知</td><td>免费子域-可绑定1个</td><td><a href="https://www.nethely.hu/">https://www.nethely.hu/</a></td><td>免费子域没有SSL</td></tr><tr><td>evai</td><td>2GB</td><td>50GB</td><td>自定义域名</td><td><a href="https://evai.pl/">https://evai.pl/</a></td><td>不稳定(部分地区被墙)</td></tr><tr><td>FREEHOSTING</td><td>10GB</td><td>无限</td><td>自定义域名</td><td><a href="https://www.freehosting.com/">https://www.freehosting.com/</a></td><td>SSL需付费</td></tr></tbody></table><p><strong>免费主机仅供测试，数据无价，注意备份</strong></p>]]></content>
+    
+    
+    <summary type="html">统计一些免费的虚拟主机</summary>
+    
+    
+    
+    <category term="主机" scheme="http://example.com/categories/%E4%B8%BB%E6%9C%BA/"/>
+    
+    
+    <category term="NexT" scheme="http://example.com/tags/NexT/"/>
+    
+    <category term="美化" scheme="http://example.com/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="白嫖" scheme="http://example.com/tags/%E7%99%BD%E5%AB%96/"/>
+    
+  </entry>
   
   <entry>
     <title>innosetup打包exe安装程序</title>

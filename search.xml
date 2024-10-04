@@ -116,6 +116,17 @@
       </tags>
   </entry>
   <entry>
+    <title>免费搭建Umami</title>
+    <url>/2024/08/06/%E5%85%8D%E8%B4%B9Umami%E6%90%AD%E5%BB%BA%20/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>美化博客</title>
     <url>/2024/07/18/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>NexT 提供了两种方式：</p>
@@ -193,17 +204,6 @@
       </tags>
   </entry>
   <entry>
-    <title>免费搭建Umami</title>
-    <url>/2024/08/06/%E5%85%8D%E8%B4%B9Umami%E6%90%AD%E5%BB%BA%20/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>免费白嫖microsoft 365</title>
     <url>/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/</url>
     <content><![CDATA[<h4 id="申请准备"><a href="#申请准备" class="headerlink" title="申请准备"></a>申请准备</h4><h5 id="嫖前准备"><a href="#嫖前准备" class="headerlink" title="嫖前准备"></a>嫖前准备</h5><p>由于注册过程中需要验证手机号，所以提前准备fq软件。如果没有可以</p>
@@ -264,6 +264,96 @@
       <tags>
         <tag>微软</tag>
         <tag>microsoft 365</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费虚拟主机</title>
+    <url>/2024/10/04/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>服务商</th>
+<th>存储空间</th>
+<th>流量</th>
+<th>域名</th>
+<th>网址</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free Hostia</td>
+<td>250MB</td>
+<td>6GB</td>
+<td>可绑定5个</td>
+<td><a href="https://www.freehostia.com/">https://www.freehostia.com/</a></td>
+<td>无</td>
+</tr>
+<tr>
+<td>Pro Free Host</td>
+<td>5G</td>
+<td>无限</td>
+<td>免费子域+自定义域名</td>
+<td><a href="https://profreehost.com/">https://profreehost.com/</a></td>
+<td>byet分销</td>
+</tr>
+<tr>
+<td>InfinityFree</td>
+<td>5GB</td>
+<td>无限</td>
+<td>免费子域+自定义域名</td>
+<td><a href="https://www.infinityfree.com/">https://www.infinityfree.com/</a></td>
+<td>byet分销</td>
+</tr>
+<tr>
+<td>HZ</td>
+<td>1GB</td>
+<td>无限</td>
+<td>可绑定1个</td>
+<td><a href="https://hz.cz/">https://hz.cz/</a></td>
+<td>SSL不能用</td>
+</tr>
+<tr>
+<td>Free Web Hosting Area</td>
+<td>1500MB</td>
+<td>无限</td>
+<td>免费子域+自定义域名</td>
+<td><a href="https://freewha.com/">https://freewha.com/</a></td>
+<td>有广告</td>
+</tr>
+<tr>
+<td>Nethely</td>
+<td>256MB</td>
+<td>未知</td>
+<td>免费子域-可绑定1个</td>
+<td><a href="https://www.nethely.hu/">https://www.nethely.hu/</a></td>
+<td>免费子域没有SSL</td>
+</tr>
+<tr>
+<td>evai</td>
+<td>2GB</td>
+<td>50GB</td>
+<td>自定义域名</td>
+<td><a href="https://evai.pl/">https://evai.pl/</a></td>
+<td>不稳定(部分地区被墙)</td>
+</tr>
+<tr>
+<td>FREEHOSTING</td>
+<td>10GB</td>
+<td>无限</td>
+<td>自定义域名</td>
+<td><a href="https://www.freehosting.com/">https://www.freehosting.com/</a></td>
+<td>SSL需付费</td>
+</tr>
+</tbody></table>
+<p><strong>免费主机仅供测试，数据无价，注意备份</strong></p>
+]]></content>
+      <categories>
+        <category>主机</category>
+      </categories>
+      <tags>
+        <tag>NexT</tag>
+        <tag>美化</tag>
+        <tag>白嫖</tag>
       </tags>
   </entry>
 </search>
