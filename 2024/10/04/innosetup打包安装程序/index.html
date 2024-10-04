@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":"auto","version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="使用innosetup软件，并且把程序目录打包成exe安装程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="innosetup打包exe安装程序">
+<meta property="og:url" content="http://example.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/index.html">
+<meta property="og:site_name" content="加号の小破站">
+<meta property="og:description" content="使用innosetup软件，并且把程序目录打包成exe安装程序">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/33c4792388ae9eb9a89f36018bf82b0f.png">
+<meta property="article:published_time" content="2024-10-04T10:56:10.426Z">
+<meta property="article:modified_time" content="2024-10-04T11:11:18.529Z">
+<meta property="article:author" content="Wang Jiahao">
+<meta property="article:tag" content="innosetup">
+<meta property="article:tag" content="软件">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i-blog.csdnimg.cn/blog_migrate/33c4792388ae9eb9a89f36018bf82b0f.png">
+
+
+<link rel="canonical" href="http://example.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/","path":"2024/10/04/innosetup打包安装程序/","title":"innosetup打包exe安装程序"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>innosetup打包exe安装程序 | 加号の小破站</title>
+  
+
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "n8qobb59xw");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="加号の小破站" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">加号の小破站</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-innosetup"><span class="nav-number">1.</span> <span class="nav-text">安装 innosetup</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Wang Jiahao"
+      src="https://cravatar.cn/avatar/2cc81a4c3b33ec88fc2c1626e1187178?size=256&cache=1721288395273">
+  <p class="site-author-name" itemprop="name">Wang Jiahao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/chen90922" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;chen90922" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:chen90922@outlook.com" title="E-Mail → mailto:chen90922@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cravatar.cn/avatar/2cc81a4c3b33ec88fc2c1626e1187178?size=256&cache=1721288395273">
+      <meta itemprop="name" content="Wang Jiahao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="加号の小破站">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="innosetup打包exe安装程序 | 加号の小破站">
+      <meta itemprop="description" content="使用innosetup软件，并且把程序目录打包成exe安装程序">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          innosetup打包exe安装程序
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-10-04 18:56:10 / 修改时间：19:11:18" itemprop="dateCreated datePublished" datetime="2024-10-04T18:56:10+08:00">2024-10-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Windows/" itemprop="url" rel="index"><span itemprop="name">Windows</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span id="/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/" class="post-meta-item twikoo_visitors" data-flag-title="innosetup打包exe安装程序" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="twikoo_visitors"></span>
+    </span>
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>15 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">使用innosetup软件，并且把程序目录打包成exe安装程序</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="安装-innosetup"><a href="#安装-innosetup" class="headerlink" title="安装 innosetup"></a>安装 innosetup</h2><p>innosetup下载地址：<a target="_blank" rel="noopener" href="https://jrsoftware.org/isdl.php">innosetup</a></p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/33c4792388ae9eb9a89f36018bf82b0f.png"></p>
+<p>下载后安装，打开安装文件夹，进入 Languages ，新建 Chinese.isl 文件</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">; *** Inno Setup version 6.1.0+ Chinese Simplified messages ***</span></span><br><span class="line"><span class="comment">;</span></span><br><span class="line"><span class="comment">; To download user-contributed translations of this file, go to:</span></span><br><span class="line"><span class="comment">;   https://jrsoftware.org/files/istrans/</span></span><br><span class="line"><span class="comment">;</span></span><br><span class="line"><span class="comment">; <span class="doctag">Note:</span> When translating this text, do not add periods (.) to the end of</span></span><br><span class="line"><span class="comment">; messages that didn&#x27;t have them already, because on those messages Inno</span></span><br><span class="line"><span class="comment">; Setup adds the periods automatically (appending a period would result in</span></span><br><span class="line"><span class="comment">; two periods being displayed).</span></span><br><span class="line"><span class="comment">;</span></span><br><span class="line"><span class="comment">; Maintained by Zhenghan Yang</span></span><br><span class="line"><span class="comment">; Email: 847320916@QQ.com</span></span><br><span class="line"><span class="comment">; Translation based on network resource</span></span><br><span class="line"><span class="comment">; The latest Translation is on https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation</span></span><br><span class="line"><span class="comment">;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[LangOptions]</span></span><br><span class="line"><span class="comment">; The following three entries are very important. Be sure to read and </span></span><br><span class="line"><span class="comment">; understand the &#x27;[LangOptions] section&#x27; topic in the help file.</span></span><br><span class="line"><span class="attr">LanguageName</span>=简体中文</span><br><span class="line"><span class="comment">; If Language Name display incorrect, uncomment next line</span></span><br><span class="line"><span class="comment">; LanguageName=&lt;7B80&gt;&lt;4F53&gt;&lt;4E2D&gt;&lt;6587&gt;</span></span><br><span class="line"><span class="comment">; About LanguageID, to reference link:</span></span><br><span class="line"><span class="comment">; https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c</span></span><br><span class="line"><span class="attr">LanguageID</span>=<span class="variable">$0804</span></span><br><span class="line"><span class="attr">LanguageCodePage</span>=<span class="number">936</span></span><br><span class="line"><span class="comment">; If the language you are translating to requires special font faces or</span></span><br><span class="line"><span class="comment">; sizes, uncomment any of the following entries and change them accordingly.</span></span><br><span class="line"><span class="attr">DialogFontName</span>=Microsoft YaHei UI</span><br><span class="line"><span class="comment">;DialogFontSize=8</span></span><br><span class="line"><span class="attr">WelcomeFontName</span>=Microsoft YaHei UI</span><br><span class="line"><span class="comment">;WelcomeFontSize=12</span></span><br><span class="line"><span class="attr">TitleFontName</span>=Microsoft YaHei UI</span><br><span class="line"><span class="comment">;TitleFontSize=29</span></span><br><span class="line"><span class="comment">;CopyrightFontName=Arial</span></span><br><span class="line"><span class="comment">;CopyrightFontSize=8</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Messages]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 应用程序标题</span></span><br><span class="line"><span class="attr">SetupAppTitle</span>=安装</span><br><span class="line"><span class="attr">SetupWindowTitle</span>=安装 - %<span class="number">1</span></span><br><span class="line"><span class="attr">UninstallAppTitle</span>=卸载</span><br><span class="line"><span class="attr">UninstallAppFullTitle</span>=%<span class="number">1</span> 卸载</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** Misc. common</span></span><br><span class="line"><span class="attr">InformationTitle</span>=信息</span><br><span class="line"><span class="attr">ConfirmTitle</span>=确认</span><br><span class="line"><span class="attr">ErrorTitle</span>=错误</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** SetupLdr messages</span></span><br><span class="line"><span class="attr">SetupLdrStartupMessage</span>=现在将安装 %<span class="number">1</span>。您想要继续吗？</span><br><span class="line"><span class="attr">LdrCannotCreateTemp</span>=不能创建临时文件。安装中断。</span><br><span class="line"><span class="attr">LdrCannotExecTemp</span>=不能执行临时目录中的文件。安装中断。</span><br><span class="line"><span class="attr">HelpTextNote</span>=</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 启动错误消息</span></span><br><span class="line"><span class="attr">LastErrorMessage</span>=%<span class="number">1</span>.%n%n错误 %<span class="number">2</span>: %<span class="number">3</span></span><br><span class="line"><span class="attr">SetupFileMissing</span>=安装目录中的文件 %<span class="number">1</span> 丢失。请修正这个问题或者获取程序的新副本。</span><br><span class="line"><span class="attr">SetupFileCorrupt</span>=安装文件已损坏。请获取程序的新副本。</span><br><span class="line"><span class="attr">SetupFileCorruptOrWrongVer</span>=安装文件已损坏，或是与这个安装程序的版本不兼容。请修正这个问题或获取新的程序副本。</span><br><span class="line"><span class="attr">InvalidParameter</span>=无效的命令行参数：%n%n%<span class="number">1</span></span><br><span class="line"><span class="attr">SetupAlreadyRunning</span>=安装程序正在运行。</span><br><span class="line"><span class="attr">WindowsVersionNotSupported</span>=这个程序不支持当前计算机运行的 Windows 版本。</span><br><span class="line"><span class="attr">WindowsServicePackRequired</span>=这个程序需要 %<span class="number">1</span> 服务包 %<span class="number">2</span> 或更高。</span><br><span class="line"><span class="attr">NotOnThisPlatform</span>=这个程序将不能运行于 %<span class="number">1</span>。</span><br><span class="line"><span class="attr">OnlyOnThisPlatform</span>=这个程序必须运行于 %<span class="number">1</span>。</span><br><span class="line"><span class="attr">OnlyOnTheseArchitectures</span>=这个程序只能在为下列处理器架构的 Windows 版本中进行安装：%n%n%<span class="number">1</span></span><br><span class="line"><span class="attr">WinVersionTooLowError</span>=这个程序需要 %<span class="number">1</span> 版本 %<span class="number">2</span> 或更高。</span><br><span class="line"><span class="attr">WinVersionTooHighError</span>=这个程序不能安装于 %<span class="number">1</span> 版本 %<span class="number">2</span> 或更高。</span><br><span class="line"><span class="attr">AdminPrivilegesRequired</span>=在安装这个程序时您必须以管理员身份登录。</span><br><span class="line"><span class="attr">PowerUserPrivilegesRequired</span>=在安装这个程序时您必须以管理员身份或有权限的用户组身份登录。</span><br><span class="line"><span class="attr">SetupAppRunningError</span>=安装程序发现 %<span class="number">1</span> 当前正在运行。%n%n请先关闭所有运行的窗口，然后点击“确定”继续，或按“取消”退出。</span><br><span class="line"><span class="attr">UninstallAppRunningError</span>=卸载程序发现 %<span class="number">1</span> 当前正在运行。%n%n请先关闭所有运行的窗口，然后点击“确定”继续，或按“取消”退出。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 启动问题</span></span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideTitle</span>=选择安装程序模式</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideInstruction</span>=选择安装模式</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideText1</span>=%<span class="number">1</span> 可以为所有用户安装(需要管理员权限)，或仅为您安装。</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideText2</span>=%<span class="number">1</span> 只能为您安装，或为所有用户安装(需要管理员权限)。</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideAllUsers</span>=为所有用户安装(&amp;A)</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideAllUsersRecommended</span>=为所有用户安装(&amp;A) (建议选项)</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideCurrentUser</span>=仅为我安装(&amp;M)</span><br><span class="line"><span class="attr">PrivilegesRequiredOverrideCurrentUserRecommended</span>=仅为我安装(&amp;M) (建议选项)</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 其它错误</span></span><br><span class="line"><span class="attr">ErrorCreatingDir</span>=安装程序不能创建目录“%<span class="number">1</span>”。</span><br><span class="line"><span class="attr">ErrorTooManyFilesInDir</span>=不能在目录“%<span class="number">1</span>”中创建文件，因为里面的文件太多</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 安装程序公共消息</span></span><br><span class="line"><span class="attr">ExitSetupTitle</span>=退出安装程序</span><br><span class="line"><span class="attr">ExitSetupMessage</span>=安装程序尚未完成安装。如果您现在退出，程序将不能安装。%n%n您可以以后再运行安装程序完成安装。%n%n现在退出安装程序吗？</span><br><span class="line"><span class="attr">AboutSetupMenuItem</span>=关于安装程序(&amp;A)...</span><br><span class="line"><span class="attr">AboutSetupTitle</span>=关于安装程序</span><br><span class="line"><span class="attr">AboutSetupMessage</span>=%<span class="number">1</span> 版本 %<span class="number">2</span>%n%<span class="number">3</span>%n%n%<span class="number">1</span> 主页：%n%<span class="number">4</span></span><br><span class="line"><span class="attr">AboutSetupNote</span>=</span><br><span class="line"><span class="attr">TranslatorNote</span>=Translated by Zhenghan Yang.</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 按钮</span></span><br><span class="line"><span class="attr">ButtonBack</span>=&lt; 上一步(&amp;B)</span><br><span class="line"><span class="attr">ButtonNext</span>=下一步(&amp;N) &gt;</span><br><span class="line"><span class="attr">ButtonInstall</span>=安装(&amp;I)</span><br><span class="line"><span class="attr">ButtonOK</span>=确定</span><br><span class="line"><span class="attr">ButtonCancel</span>=取消</span><br><span class="line"><span class="attr">ButtonYes</span>=是(&amp;Y)</span><br><span class="line"><span class="attr">ButtonYesToAll</span>=全是(&amp;A)</span><br><span class="line"><span class="attr">ButtonNo</span>=否(&amp;N)</span><br><span class="line"><span class="attr">ButtonNoToAll</span>=全否(&amp;O)</span><br><span class="line"><span class="attr">ButtonFinish</span>=完成(&amp;F)</span><br><span class="line"><span class="attr">ButtonBrowse</span>=浏览(&amp;B)...</span><br><span class="line"><span class="attr">ButtonWizardBrowse</span>=浏览(&amp;R)...</span><br><span class="line"><span class="attr">ButtonNewFolder</span>=新建文件夹(&amp;M)</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “选择语言”对话框消息</span></span><br><span class="line"><span class="attr">SelectLanguageTitle</span>=选择安装语言</span><br><span class="line"><span class="attr">SelectLanguageLabel</span>=选择安装时要使用的语言。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 公共向导文字</span></span><br><span class="line"><span class="attr">ClickNext</span>=点击“下一步”继续，或点击“取消”退出安装程序。</span><br><span class="line"><span class="attr">BeveledLabel</span>=</span><br><span class="line"><span class="attr">BrowseDialogTitle</span>=浏览文件夹</span><br><span class="line"><span class="attr">BrowseDialogLabel</span>=在下列列表中选择一个文件夹，然后点击“确定”。</span><br><span class="line"><span class="attr">NewFolderName</span>=新建文件夹</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “欢迎”向导页</span></span><br><span class="line"><span class="attr">WelcomeLabel1</span>=欢迎使用 [name] 安装向导</span><br><span class="line"><span class="attr">WelcomeLabel2</span>=现在将安装 [name/ver] 到您的电脑中。%n%n推荐您在继续安装前关闭所有其它应用程序。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “密码”向导页</span></span><br><span class="line"><span class="attr">WizardPassword</span>=密码</span><br><span class="line"><span class="attr">PasswordLabel1</span>=这个安装程序有密码保护。</span><br><span class="line"><span class="attr">PasswordLabel3</span>=请输入密码，然后点击“下一步”继续。密码区分大小写。</span><br><span class="line"><span class="attr">PasswordEditLabel</span>=密码(&amp;P)：</span><br><span class="line"><span class="attr">IncorrectPassword</span>=您所输入的密码不正确，请重试。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “许可协议”向导页</span></span><br><span class="line"><span class="attr">WizardLicense</span>=许可协议</span><br><span class="line"><span class="attr">LicenseLabel</span>=继续安装前请阅读下列重要信息。</span><br><span class="line"><span class="attr">LicenseLabel3</span>=请仔细阅读下列许可协议。您在继续安装前必须同意这些协议条款。</span><br><span class="line"><span class="attr">LicenseAccepted</span>=我同意此协议(&amp;A)</span><br><span class="line"><span class="attr">LicenseNotAccepted</span>=我拒绝此协议(&amp;D)</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “信息”向导页</span></span><br><span class="line"><span class="attr">WizardInfoBefore</span>=信息</span><br><span class="line"><span class="attr">InfoBeforeLabel</span>=请在继续安装前阅读下列重要信息。</span><br><span class="line"><span class="attr">InfoBeforeClickLabel</span>=如果您想继续安装，点击“下一步”。</span><br><span class="line"><span class="attr">WizardInfoAfter</span>=信息</span><br><span class="line"><span class="attr">InfoAfterLabel</span>=请在继续安装前阅读下列重要信息。</span><br><span class="line"><span class="attr">InfoAfterClickLabel</span>=如果您想继续安装，点击“下一步”。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “用户信息”向导页</span></span><br><span class="line"><span class="attr">WizardUserInfo</span>=用户信息</span><br><span class="line"><span class="attr">UserInfoDesc</span>=请输入您的信息。</span><br><span class="line"><span class="attr">UserInfoName</span>=用户名(&amp;U)：</span><br><span class="line"><span class="attr">UserInfoOrg</span>=组织(&amp;O)：</span><br><span class="line"><span class="attr">UserInfoSerial</span>=序列号(&amp;S)：</span><br><span class="line"><span class="attr">UserInfoNameRequired</span>=您必须输入用户名。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “选择目标目录”向导页</span></span><br><span class="line"><span class="attr">WizardSelectDir</span>=选择目标位置</span><br><span class="line"><span class="attr">SelectDirDesc</span>=您想将 [name] 安装在哪里？</span><br><span class="line"><span class="attr">SelectDirLabel3</span>=安装程序将安装 [name] 到下列文件夹中。</span><br><span class="line"><span class="attr">SelectDirBrowseLabel</span>=点击“下一步”继续。如果您想选择其它文件夹，点击“浏览”。</span><br><span class="line"><span class="attr">DiskSpaceGBLabel</span>=至少需要有 [gb] GB 的可用磁盘空间。</span><br><span class="line"><span class="attr">DiskSpaceMBLabel</span>=至少需要有 [mb] MB 的可用磁盘空间。</span><br><span class="line"><span class="attr">CannotInstallToNetworkDrive</span>=安装程序无法安装到一个网络驱动器。</span><br><span class="line"><span class="attr">CannotInstallToUNCPath</span>=安装程序无法安装到一个UNC路径。</span><br><span class="line"><span class="attr">InvalidPath</span>=您必须输入一个带驱动器卷标的完整路径，例如：%n%nC:\APP%n%n或下列形式的UNC路径：%n%n\\server\share</span><br><span class="line"><span class="attr">InvalidDrive</span>=您选定的驱动器或 UNC 共享不存在或不能访问。请选选择其它位置。</span><br><span class="line"><span class="attr">DiskSpaceWarningTitle</span>=没有足够的磁盘空间</span><br><span class="line"><span class="attr">DiskSpaceWarning</span>=安装程序至少需要 %<span class="number">1</span> KB 的可用空间才能安装，但选定驱动器只有 %<span class="number">2</span> KB 的可用空间。%n%n您一定要继续吗？</span><br><span class="line"><span class="attr">DirNameTooLong</span>=文件夹名称或路径太长。</span><br><span class="line"><span class="attr">InvalidDirName</span>=文件夹名称无效。</span><br><span class="line"><span class="attr">BadDirName32</span>=文件夹名称不能包含下列任何字符：%n%n%<span class="number">1</span></span><br><span class="line"><span class="attr">DirExistsTitle</span>=文件夹已存在</span><br><span class="line"><span class="attr">DirExists</span>=文件夹：%n%n%<span class="number">1</span>%n%n已经存在。您一定要安装到这个文件夹中吗？</span><br><span class="line"><span class="attr">DirDoesntExistTitle</span>=文件夹不存在</span><br><span class="line"><span class="attr">DirDoesntExist</span>=文件夹：%n%n%<span class="number">1</span>%n%n不存在。您想要创建此文件夹吗？</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “选择组件”向导页</span></span><br><span class="line"><span class="attr">WizardSelectComponents</span>=选择组件</span><br><span class="line"><span class="attr">SelectComponentsDesc</span>=您想安装哪些程序的组件？</span><br><span class="line"><span class="attr">SelectComponentsLabel2</span>=选择您想要安装的组件；清除您不想安装的组件。然后点击“下一步”继续。</span><br><span class="line"><span class="attr">FullInstallation</span>=完全安装</span><br><span class="line"><span class="comment">; if possible don&#x27;t translate &#x27;Compact&#x27; as &#x27;Minimal&#x27; (I mean &#x27;Minimal&#x27; in your language)</span></span><br><span class="line"><span class="attr">CompactInstallation</span>=简洁安装</span><br><span class="line"><span class="attr">CustomInstallation</span>=自定义安装</span><br><span class="line"><span class="attr">NoUninstallWarningTitle</span>=组件已存在</span><br><span class="line"><span class="attr">NoUninstallWarning</span>=安装程序检测到下列组件已在您的电脑中安装：%n%n%<span class="number">1</span>%n%n取消选定这些组件将不能卸载它们。%n%n您一定要继续吗？</span><br><span class="line"><span class="attr">ComponentSize1</span>=%<span class="number">1</span> KB</span><br><span class="line"><span class="attr">ComponentSize2</span>=%<span class="number">1</span> MB</span><br><span class="line"><span class="attr">ComponentsDiskSpaceGBLabel</span>=当前选择的组件至少需要 [gb] GB 的磁盘空间。</span><br><span class="line"><span class="attr">ComponentsDiskSpaceMBLabel</span>=当前选择的组件至少需要 [mb] MB 的磁盘空间。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “选择附加任务”向导页</span></span><br><span class="line"><span class="attr">WizardSelectTasks</span>=选择附加任务</span><br><span class="line"><span class="attr">SelectTasksDesc</span>=您想要安装程序执行哪些附加任务？</span><br><span class="line"><span class="attr">SelectTasksLabel2</span>=选择您想要安装程序在安装 [name] 时执行的附加任务，然后点击“下一步”。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “选择开始菜单文件夹”向导页</span></span><br><span class="line"><span class="attr">WizardSelectProgramGroup</span>=选择开始菜单文件夹</span><br><span class="line"><span class="attr">SelectStartMenuFolderDesc</span>=安装程序应该在哪里放置程序的快捷方式？</span><br><span class="line"><span class="attr">SelectStartMenuFolderLabel3</span>=安装程序现在将在下列开始菜单文件夹中创建程序的快捷方式。</span><br><span class="line"><span class="attr">SelectStartMenuFolderBrowseLabel</span>=点击“下一步”继续。如果您想选择其它文件夹，点击“浏览”。</span><br><span class="line"><span class="attr">MustEnterGroupName</span>=您必须输入一个文件夹名。</span><br><span class="line"><span class="attr">GroupNameTooLong</span>=文件夹名或路径太长。</span><br><span class="line"><span class="attr">InvalidGroupName</span>=文件夹名无效。</span><br><span class="line"><span class="attr">BadGroupName</span>=文件夹名不能包含下列任何字符：%n%n%<span class="number">1</span></span><br><span class="line"><span class="attr">NoProgramGroupCheck2</span>=不创建开始菜单文件夹(&amp;D)</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “准备安装”向导页</span></span><br><span class="line"><span class="attr">WizardReady</span>=准备安装</span><br><span class="line"><span class="attr">ReadyLabel1</span>=安装程序现在准备开始安装 [name] 到您的电脑中。</span><br><span class="line"><span class="attr">ReadyLabel2a</span>=点击“安装”继续此安装程序。如果您想要回顾或修改设置，请点击“上一步”。</span><br><span class="line"><span class="attr">ReadyLabel2b</span>=点击“安装”继续此安装程序？</span><br><span class="line"><span class="attr">ReadyMemoUserInfo</span>=用户信息：</span><br><span class="line"><span class="attr">ReadyMemoDir</span>=目标位置：</span><br><span class="line"><span class="attr">ReadyMemoType</span>=安装类型：</span><br><span class="line"><span class="attr">ReadyMemoComponents</span>=选定组件：</span><br><span class="line"><span class="attr">ReadyMemoGroup</span>=开始菜单文件夹：</span><br><span class="line"><span class="attr">ReadyMemoTasks</span>=附加任务：</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** TDownloadWizardPage wizard page and DownloadTemporaryFile</span></span><br><span class="line"><span class="attr">DownloadingLabel</span>=正在下载附加文件...</span><br><span class="line"><span class="attr">ButtonStopDownload</span>=停止下载(&amp;S)</span><br><span class="line"><span class="attr">StopDownload</span>=您确定要停止下载吗？</span><br><span class="line"><span class="attr">ErrorDownloadAborted</span>=下载已中止</span><br><span class="line"><span class="attr">ErrorDownloadFailed</span>=下载失败：%<span class="number">1</span> %<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorDownloadSizeFailed</span>=获取下载大小失败：%<span class="number">1</span> %<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorFileHash1</span>=校验文件哈希失败：%<span class="number">1</span></span><br><span class="line"><span class="attr">ErrorFileHash2</span>=无效的文件哈希：预期为 %<span class="number">1</span>，实际为 %<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorProgress</span>=无效的进度：%<span class="number">1</span>，总共%<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorFileSize</span>=文件大小错误：预期为 %<span class="number">1</span>，实际为 %<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “正在准备安装”向导页</span></span><br><span class="line"><span class="attr">WizardPreparing</span>=正在准备安装</span><br><span class="line"><span class="attr">PreparingDesc</span>=安装程序正在准备安装 [name] 到您的电脑中。</span><br><span class="line"><span class="attr">PreviousInstallNotCompleted</span>=先前程序的安装/卸载未完成。您需要重新启动您的电脑才能完成安装。%n%n在重新启动电脑后，再运行安装完成 [name] 的安装。</span><br><span class="line"><span class="attr">CannotContinue</span>=安装程序不能继续。请点击“取消”退出。</span><br><span class="line"><span class="attr">ApplicationsFound</span>=下列应用程序正在使用的文件需要更新设置。它是建议您允许安装程序自动关闭这些应用程序。</span><br><span class="line"><span class="attr">ApplicationsFound2</span>=下列应用程序正在使用的文件需要更新设置。它是建议您允许安装程序自动关闭这些应用程序。安装完成后，安装程序将尝试重新启动应用程序。</span><br><span class="line"><span class="attr">CloseApplications</span>=自动关闭该应用程序(&amp;A)</span><br><span class="line"><span class="attr">DontCloseApplications</span>=不要关闭该应用程序(&amp;D)</span><br><span class="line"><span class="attr">ErrorCloseApplications</span>=安装程序无法自动关闭所有应用程序。在继续之前，我们建议您关闭所有使用需要更新的安装程序文件。</span><br><span class="line"><span class="attr">PrepareToInstallNeedsRestart</span>=安装程序必须重新启动计算机。重新启动计算机后，请再次运行安装程序以完成 [name] 的安装。%n%n是否立即重新启动？</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “正在安装”向导页</span></span><br><span class="line"><span class="attr">WizardInstalling</span>=正在安装</span><br><span class="line"><span class="attr">InstallingLabel</span>=安装程序正在安装 [name] 到您的电脑中，请稍等。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “安装完成”向导页</span></span><br><span class="line"><span class="attr">FinishedHeadingLabel</span>=[name] 安装完成</span><br><span class="line"><span class="attr">FinishedLabelNoIcons</span>=安装程序已在您的电脑中安装了 [name]。</span><br><span class="line"><span class="attr">FinishedLabel</span>=安装程序已在您的电脑中安装了 [name]。此应用程序可以通过选择安装的快捷方式运行。</span><br><span class="line"><span class="attr">ClickFinish</span>=点击“完成”退出安装程序。</span><br><span class="line"><span class="attr">FinishedRestartLabel</span>=要完成 [name] 的安装，安装程序必须重新启动您的电脑。您想要立即重新启动吗？</span><br><span class="line"><span class="attr">FinishedRestartMessage</span>=要完成 [name] 的安装，安装程序必须重新启动您的电脑。%n%n您想要立即重新启动吗？</span><br><span class="line"><span class="attr">ShowReadmeCheck</span>=是，我想查阅自述文件</span><br><span class="line"><span class="attr">YesRadio</span>=是，立即重新启动电脑(&amp;Y)</span><br><span class="line"><span class="attr">NoRadio</span>=否，稍后重新启动电脑(&amp;N)</span><br><span class="line"><span class="comment">; used for example as &#x27;Run MyProg.exe&#x27;</span></span><br><span class="line"><span class="attr">RunEntryExec</span>=运行 %<span class="number">1</span></span><br><span class="line"><span class="comment">; used for example as &#x27;View Readme.txt&#x27;</span></span><br><span class="line"><span class="attr">RunEntryShellExec</span>=查阅 %<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; *** “安装程序需要下一张磁盘”提示</span></span><br><span class="line"><span class="attr">ChangeDiskTitle</span>=安装程序需要下一张磁盘</span><br><span class="line"><span class="attr">SelectDiskLabel2</span>=请插入磁盘 %<span class="number">1</span> 并点击“确定”。%n%n如果这个磁盘中的文件可以在下列文件夹之外的文件夹中找到，请输入正确的路径或点击“浏览”。</span><br><span class="line"><span class="attr">PathLabel</span>=路径(&amp;P)：</span><br><span class="line"><span class="attr">FileNotInDir2</span>=文件“%<span class="number">1</span>”不能在“%<span class="number">2</span>”定位。请插入正确的磁盘或选择其它文件夹。</span><br><span class="line"><span class="attr">SelectDirectoryLabel</span>=请指定下一张磁盘的位置。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 安装状态消息</span></span><br><span class="line"><span class="attr">SetupAborted</span>=安装程序未完成安装。%n%n请修正这个问题并重新运行安装程序。</span><br><span class="line"><span class="attr">AbortRetryIgnoreSelectAction</span>=选择操作</span><br><span class="line"><span class="attr">AbortRetryIgnoreRetry</span>=重试(&amp;T)</span><br><span class="line"><span class="attr">AbortRetryIgnoreIgnore</span>=忽略错误并继续(&amp;I)</span><br><span class="line"><span class="attr">AbortRetryIgnoreCancel</span>=关闭安装程序</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 安装状态消息</span></span><br><span class="line"><span class="attr">StatusClosingApplications</span>=正在关闭应用程序...</span><br><span class="line"><span class="attr">StatusCreateDirs</span>=正在创建目录...</span><br><span class="line"><span class="attr">StatusExtractFiles</span>=正在解压缩文件...</span><br><span class="line"><span class="attr">StatusCreateIcons</span>=正在创建快捷方式...</span><br><span class="line"><span class="attr">StatusCreateIniEntries</span>=正在创建 INI 条目...</span><br><span class="line"><span class="attr">StatusCreateRegistryEntries</span>=正在创建注册表条目...</span><br><span class="line"><span class="attr">StatusRegisterFiles</span>=正在注册文件...</span><br><span class="line"><span class="attr">StatusSavingUninstall</span>=正在保存卸载信息...</span><br><span class="line"><span class="attr">StatusRunProgram</span>=正在完成安装...</span><br><span class="line"><span class="attr">StatusRestartingApplications</span>=正在重启应用程序...</span><br><span class="line"><span class="attr">StatusRollback</span>=正在撤销更改...</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 其它错误</span></span><br><span class="line"><span class="attr">ErrorInternal2</span>=内部错误：%<span class="number">1</span></span><br><span class="line"><span class="attr">ErrorFunctionFailedNoCode</span>=%<span class="number">1</span> 失败</span><br><span class="line"><span class="attr">ErrorFunctionFailed</span>=%<span class="number">1</span> 失败；错误代码 %<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorFunctionFailedWithMessage</span>=%<span class="number">1</span> 失败；错误代码 %<span class="number">2</span>.%n%<span class="number">3</span></span><br><span class="line"><span class="attr">ErrorExecutingProgram</span>=不能执行文件：%n%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 注册表错误</span></span><br><span class="line"><span class="attr">ErrorRegOpenKey</span>=打开注册表项时出错：%n%<span class="number">1</span>\%<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorRegCreateKey</span>=创建注册表项时出错：%n%<span class="number">1</span>\%<span class="number">2</span></span><br><span class="line"><span class="attr">ErrorRegWriteKey</span>=写入注册表项时出错：%n%<span class="number">1</span>\%<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; *** INI 错误</span></span><br><span class="line"><span class="attr">ErrorIniEntry</span>=在文件“%<span class="number">1</span>”中创建INI条目时出错。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 文件复制错误</span></span><br><span class="line"><span class="attr">FileAbortRetryIgnoreSkipNotRecommended</span>=跳过这个文件(&amp;S) (不推荐)</span><br><span class="line"><span class="attr">FileAbortRetryIgnoreIgnoreNotRecommended</span>=忽略错误并继续(&amp;I) (不推荐)</span><br><span class="line"><span class="attr">SourceIsCorrupted</span>=源文件已损坏</span><br><span class="line"><span class="attr">SourceDoesntExist</span>=源文件“%<span class="number">1</span>”不存在</span><br><span class="line"><span class="attr">ExistingFileReadOnly2</span>=无法替换现有文件，因为它是只读的。</span><br><span class="line"><span class="attr">ExistingFileReadOnlyRetry</span>=移除只读属性并重试(&amp;R)</span><br><span class="line"><span class="attr">ExistingFileReadOnlyKeepExisting</span>=保留现有文件(&amp;K)</span><br><span class="line"><span class="attr">ErrorReadingExistingDest</span>=尝试读取现有文件时出错：</span><br><span class="line"><span class="attr">FileExistsSelectAction</span>=选择操作</span><br><span class="line"><span class="attr">FileExists2</span>=文件已经存在。</span><br><span class="line"><span class="attr">FileExistsOverwriteExisting</span>=覆盖已经存在的文件(&amp;O)</span><br><span class="line"><span class="attr">FileExistsKeepExisting</span>=保留现有的文件(&amp;K)</span><br><span class="line"><span class="attr">FileExistsOverwriteOrKeepAll</span>=为所有的冲突文件执行此操作(&amp;D)</span><br><span class="line"><span class="attr">ExistingFileNewerSelectAction</span>=选择操作</span><br><span class="line"><span class="attr">ExistingFileNewer2</span>=现有的文件比安装程序将要安装的文件更新。</span><br><span class="line"><span class="attr">ExistingFileNewerOverwriteExisting</span>=覆盖已经存在的文件(&amp;O)</span><br><span class="line"><span class="attr">ExistingFileNewerKeepExisting</span>=保留现有的文件(&amp;K) (推荐)</span><br><span class="line"><span class="attr">ExistingFileNewerOverwriteOrKeepAll</span>=为所有的冲突文件执行此操作(&amp;D)</span><br><span class="line"><span class="attr">ErrorChangingAttr</span>=尝试改变下列现有的文件的属性时出错：</span><br><span class="line"><span class="attr">ErrorCreatingTemp</span>=尝试在目标目录创建文件时出错：</span><br><span class="line"><span class="attr">ErrorReadingSource</span>=尝试读取下列源文件时出错：</span><br><span class="line"><span class="attr">ErrorCopying</span>=尝试复制下列文件时出错：</span><br><span class="line"><span class="attr">ErrorReplacingExistingFile</span>=尝试替换现有的文件时出错：</span><br><span class="line"><span class="attr">ErrorRestartReplace</span>=重新启动替换失败：</span><br><span class="line"><span class="attr">ErrorRenamingTemp</span>=尝试重新命名以下目标目录中的一个文件时出错：</span><br><span class="line"><span class="attr">ErrorRegisterServer</span>=无法注册 DLL/OCX：%<span class="number">1</span></span><br><span class="line"><span class="attr">ErrorRegSvr32Failed</span>=RegSvr32 失败；退出代码 %<span class="number">1</span></span><br><span class="line"><span class="attr">ErrorRegisterTypeLib</span>=无法注册类型库：%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 卸载显示名字标记</span></span><br><span class="line"><span class="comment">; used for example as &#x27;My Program (32-bit)&#x27;</span></span><br><span class="line"><span class="attr">UninstallDisplayNameMark</span>=%<span class="number">1</span> (%<span class="number">2</span>)</span><br><span class="line"><span class="comment">; used for example as &#x27;My Program (32-bit, All users)&#x27;</span></span><br><span class="line"><span class="attr">UninstallDisplayNameMarks</span>=%<span class="number">1</span> (%<span class="number">2</span>, %<span class="number">3</span>)</span><br><span class="line"><span class="attr">UninstallDisplayNameMark32Bit</span>=<span class="number">32</span>位</span><br><span class="line"><span class="attr">UninstallDisplayNameMark64Bit</span>=<span class="number">64</span>位</span><br><span class="line"><span class="attr">UninstallDisplayNameMarkAllUsers</span>=所有用户</span><br><span class="line"><span class="attr">UninstallDisplayNameMarkCurrentUser</span>=当前用户</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 安装后错误</span></span><br><span class="line"><span class="attr">ErrorOpeningReadme</span>=尝试打开自述文件时出错。</span><br><span class="line"><span class="attr">ErrorRestartingComputer</span>=安装程序不能重新启动电脑，请手动重启。</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 卸载消息</span></span><br><span class="line"><span class="attr">UninstallNotFound</span>=文件“%<span class="number">1</span>”不存在。无法卸载。</span><br><span class="line"><span class="attr">UninstallOpenError</span>=文件“%<span class="number">1</span>”不能打开。无法卸载。</span><br><span class="line"><span class="attr">UninstallUnsupportedVer</span>=此版本的卸载程序无法识别卸载日志文件“%<span class="number">1</span>”的格式。无法卸载</span><br><span class="line"><span class="attr">UninstallUnknownEntry</span>=在卸载日志中遇到一个未知的条目 (%<span class="number">1</span>)</span><br><span class="line"><span class="attr">ConfirmUninstall</span>=您确认想要完全删除 %<span class="number">1</span> 及它的所有组件吗？</span><br><span class="line"><span class="attr">UninstallOnlyOnWin64</span>=这个安装程序只能在<span class="number">64</span>位Windows中进行卸载。</span><br><span class="line"><span class="attr">OnlyAdminCanUninstall</span>=这个安装的程序需要有管理员权限的用户才能卸载。</span><br><span class="line"><span class="attr">UninstallStatusLabel</span>=正在从您的电脑中删除 %<span class="number">1</span>，请稍等。</span><br><span class="line"><span class="attr">UninstalledAll</span>=%<span class="number">1</span> 已顺利地从您的电脑中删除。</span><br><span class="line"><span class="attr">UninstalledMost</span>=%<span class="number">1</span> 卸载完成。%n%n有一些内容无法被删除。您可以手动删除它们。</span><br><span class="line"><span class="attr">UninstalledAndNeedsRestart</span>=要完成 %<span class="number">1</span> 的卸载，您的电脑必须重新启动。%n%n您想立即重新启动电脑吗？</span><br><span class="line"><span class="attr">UninstallDataCorrupted</span>=文件“%<span class="number">1</span>”已损坏，无法卸载</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** 卸载状态消息</span></span><br><span class="line"><span class="attr">ConfirmDeleteSharedFileTitle</span>=删除共享文件吗？</span><br><span class="line"><span class="attr">ConfirmDeleteSharedFile2</span>=系统中包含的下列共享文件已经不再被其它程序使用。您想要卸载程序删除这些共享文件吗？%n%n如果这些文件被删除，但还有程序正在使用这些文件，这些程序可能不能正确执行。如果您不能确定，选择“否”。把这些文件保留在系统中以免引起问题。</span><br><span class="line"><span class="attr">SharedFileNameLabel</span>=文件名：</span><br><span class="line"><span class="attr">SharedFileLocationLabel</span>=位置：</span><br><span class="line"><span class="attr">WizardUninstalling</span>=卸载状态</span><br><span class="line"><span class="attr">StatusUninstalling</span>=正在卸载 %<span class="number">1</span>...</span><br><span class="line"></span><br><span class="line"><span class="comment">; *** Shutdown block reasons</span></span><br><span class="line"><span class="attr">ShutdownBlockReasonInstallingApp</span>=正在安装 %<span class="number">1</span>。</span><br><span class="line"><span class="attr">ShutdownBlockReasonUninstallingApp</span>=正在卸载 %<span class="number">1</span>。</span><br><span class="line"></span><br><span class="line"><span class="comment">; The custom messages below aren&#x27;t used by Setup itself, but if you make</span></span><br><span class="line"><span class="comment">; use of them in your scripts, you&#x27;ll want to translate them.</span></span><br><span class="line"></span><br><span class="line"><span class="section">[CustomMessages]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">NameAndVersion</span>=%<span class="number">1</span> 版本 %<span class="number">2</span></span><br><span class="line"><span class="attr">AdditionalIcons</span>=附加快捷方式：</span><br><span class="line"><span class="attr">CreateDesktopIcon</span>=创建桌面快捷方式(&amp;D)</span><br><span class="line"><span class="attr">CreateQuickLaunchIcon</span>=创建快速运行栏快捷方式(&amp;Q)</span><br><span class="line"><span class="attr">ProgramOnTheWeb</span>=%<span class="number">1</span> 网站</span><br><span class="line"><span class="attr">UninstallProgram</span>=卸载 %<span class="number">1</span></span><br><span class="line"><span class="attr">LaunchProgram</span>=运行 %<span class="number">1</span></span><br><span class="line"><span class="attr">AssocFileExtension</span>=将 %<span class="number">2</span> 文件扩展名与 %<span class="number">1</span> 建立关联(&amp;A)</span><br><span class="line"><span class="attr">AssocingFileExtension</span>=正在将 %<span class="number">2</span> 文件扩展名与 %<span class="number">1</span> 建立关联...</span><br><span class="line"><span class="attr">AutoStartProgramGroupDescription</span>=启动组：</span><br><span class="line"><span class="attr">AutoStartProgram</span>=自动启动 %<span class="number">1</span></span><br><span class="line"><span class="attr">AddonHostProgramNotFound</span>=%<span class="number">1</span>无法找到您所选择的文件夹。%n%n您想要继续吗？</span><br></pre></td></tr></table></figure>
+
+<p>打开软件，在弹出的Welcome窗口中，选择第二个选项，然后按照说明修改</p>
+<p>完成后，点击上面的蓝色箭头，选择一个位置保存配置文件，然后编译</p>
+<p>之后就可以找到一个iss和exe文件，分别是配置文件和安装程序</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Wang Jiahao 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/bitcoin.png" alt="Wang Jiahao 比特币">
+        <span>比特币</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Wang Jiahao
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://example.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/" title="innosetup打包exe安装程序">http://example.com/2024/10/04/innosetup打包安装程序/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/innosetup/" rel="tag"><i class="fa fa-tag"></i> innosetup</a>
+              <a href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag"><i class="fa fa-tag"></i> 软件</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/10/04/electron%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/" rel="prev" title="用electron把网页变成应用">
+                  <i class="fa fa-angle-left"></i> 用electron把网页变成应用
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments"><div id="twikoo-comments"></div></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Wang Jiahao</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">7k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">25 分钟</span>
+  </span>
+</div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		var t1 = Date.UTC(2024,07,17,16,35,02); //北京时间2024-07-17 16:35:02
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	}
+	siteTime();
+</script>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/chen90922" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"https://chen90922-twikoo.hf.space/","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
+
+</body>
+</html>
