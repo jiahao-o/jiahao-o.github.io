@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2024/10/04/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</loc>
+    <loc>https://jiahao.perslist.com/2024/10/04/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</loc>
     
     <lastmod>2024-10-05</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>https://jiahao.perslist.com/2024/10/04/innosetup%E6%89%93%E5%8C%85%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F/</loc>
     
     <lastmod>2024-10-04</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/10/04/electron%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/</loc>
+    <loc>https://jiahao.perslist.com/2024/10/04/electron%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/</loc>
     
     <lastmod>2024-10-04</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/08/06/%E5%85%8D%E8%B4%B9Umami%E6%90%AD%E5%BB%BA%20/</loc>
+    <loc>https://jiahao.perslist.com/2024/08/06/%E5%85%8D%E8%B4%B9Umami%E6%90%AD%E5%BB%BA%20/</loc>
     
     <lastmod>2024-08-06</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/07/18/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
+    <loc>https://jiahao.perslist.com/2024/07/18/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/</loc>
+    <loc>https://jiahao.perslist.com/2024/07/18/%E5%85%8D%E8%B4%B9%E7%99%BD%E5%AB%96microsoft365/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://jiahao.perslist.com/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://jiahao.perslist.com/tags/index.html</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://jiahao.perslist.com/categories/index.html</loc>
     
     <lastmod>2024-07-18</lastmod>
     
@@ -84,7 +84,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://jiahao.perslist.com/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -92,77 +92,77 @@
 
   
   <url>
-    <loc>http://example.com/tags/electron/</loc>
+    <loc>https://jiahao.perslist.com/tags/electron/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/NexT/</loc>
+    <loc>https://jiahao.perslist.com/tags/NexT/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E7%BE%8E%E5%8C%96/</loc>
+    <loc>https://jiahao.perslist.com/tags/%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://jiahao.perslist.com/tags/innosetup/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/hexo/</loc>
+    <loc>https://jiahao.perslist.com/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://jiahao.perslist.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/innosetup/</loc>
+    <loc>https://jiahao.perslist.com/tags/hexo/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://jiahao.perslist.com/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E5%BE%AE%E8%BD%AF/</loc>
+    <loc>https://jiahao.perslist.com/tags/%E5%BE%AE%E8%BD%AF/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/microsoft-365/</loc>
+    <loc>https://jiahao.perslist.com/tags/microsoft-365/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E7%99%BD%E5%AB%96/</loc>
+    <loc>https://jiahao.perslist.com/tags/%E7%99%BD%E5%AB%96/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -171,28 +171,28 @@
 
   
   <url>
-    <loc>http://example.com/categories/Windows/</loc>
+    <loc>https://jiahao.perslist.com/categories/Windows/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://jiahao.perslist.com/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E7%99%BD%E5%AB%96/</loc>
+    <loc>https://jiahao.perslist.com/categories/%E7%99%BD%E5%AB%96/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E4%B8%BB%E6%9C%BA/</loc>
+    <loc>https://jiahao.perslist.com/categories/%E4%B8%BB%E6%9C%BA/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
