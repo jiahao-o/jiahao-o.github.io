@@ -44,6 +44,63 @@
       </tags>
   </entry>
   <entry>
+    <title>美化博客</title>
+    <url>/2024/07/18/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>NexT 提供了两种方式：</p>
+<p>NPM安装，仅需在根目录下配置_config.next.yml即可，不过此种方式不适合于源码修改；</p>
+<p>GIT安装，安装源码到 &#x2F;path&#x2F;to&#x2F;themes&#x2F;</p>
+<h4 id="GIT安装"><a href="#GIT安装" class="headerlink" title="GIT安装"></a>GIT安装</h4><p>下载最新的master分支：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h4 id="NPM安装"><a href="#NPM安装" class="headerlink" title="NPM安装"></a>NPM安装</h4><p>下载最新的NexT主题</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure>
+
+<p>主题会安装到node_modules中，使用cp -r node_modules&#x2F;hexo-theme-next&#x2F;* themes&#x2F;next&#x2F;复制主题。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>修改根目录的  _config.yml ，配置当前使用主题：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line"># theme: landscape</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>修改信息</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 网站标题</span><br><span class="line">subtitle: &#x27;&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 作者名字</span><br><span class="line">language: zh-CN 语音</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line"># scheme: Muse</span><br><span class="line"># scheme: Mist</span><br><span class="line"># scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<p>用哪一个就删去前面的#</p>
+<h4 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h4><p>下载</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>根目录的config.yml</p>
+<p>在底部添加如下设置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
+
+<p>主题文件夹config.yml</p>
+<p>打开<code>Local Search</code>功能</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: false</span><br><span class="line">  # If auto, trigger search by changing input.</span><br><span class="line">  # If manual, trigger search by pressing enter key or search button.</span><br><span class="line">  trigger: auto</span><br><span class="line">  # Show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # Unescape html strings to the readable one.</span><br><span class="line">  unescape: false</span><br><span class="line">  # Preload the search data when the page loads.</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure>
+
+<h4 id="字数"><a href="#字数" class="headerlink" title="字数"></a>字数</h4><p>安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-word-counter</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>配置 根目录config.yml 在文件尾部添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br><span class="line">  exclude_codeblock: false</span><br><span class="line">  awl: 4</span><br><span class="line">  wpm: 275</span><br><span class="line">  suffix: &quot;mins.&quot;</span><br></pre></td></tr></table></figure>
+
+<p>主题config.yml</p>
+<p>修改</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_total: false</span><br></pre></td></tr></table></figure>
+
+<p>设置item_text_total为true</p>
+<h4 id="文章阅读次数"><a href="#文章阅读次数" class="headerlink" title="文章阅读次数"></a>文章阅读次数</h4><p>修改 主题_config.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Show Views/Visitors of the website/page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br><span class="line">    total_visitors: true</span><br><span class="line">    total_visitors_icon: user</span><br><span class="line">    total_views: true</span><br><span class="line">    total_views_icon: eye</span><br><span class="line">    post_views: true</span><br><span class="line">    post_views_icon: eye</span><br></pre></td></tr></table></figure>
+
+<p>设置enable为true即可。</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>NexT</tag>
+        <tag>美化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HEXO+GITHUB做个人博客</title>
     <url>/2024/07/18/hexo+github%E5%81%9A%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>Node.js:</p>
@@ -116,60 +173,14 @@
       </tags>
   </entry>
   <entry>
-    <title>美化博客</title>
-    <url>/2024/07/18/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>NexT 提供了两种方式：</p>
-<p>NPM安装，仅需在根目录下配置_config.next.yml即可，不过此种方式不适合于源码修改；</p>
-<p>GIT安装，安装源码到 &#x2F;path&#x2F;to&#x2F;themes&#x2F;</p>
-<h4 id="GIT安装"><a href="#GIT安装" class="headerlink" title="GIT安装"></a>GIT安装</h4><p>下载最新的master分支：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<h4 id="NPM安装"><a href="#NPM安装" class="headerlink" title="NPM安装"></a>NPM安装</h4><p>下载最新的NexT主题</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-next@latest</span><br></pre></td></tr></table></figure>
-
-<p>主题会安装到node_modules中，使用cp -r node_modules&#x2F;hexo-theme-next&#x2F;* themes&#x2F;next&#x2F;复制主题。</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>修改根目录的  _config.yml ，配置当前使用主题：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line"># theme: landscape</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-<p>修改信息</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 网站标题</span><br><span class="line">subtitle: &#x27;&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 作者名字</span><br><span class="line">language: zh-CN 语音</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
-
-<h4 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line"># scheme: Muse</span><br><span class="line"># scheme: Mist</span><br><span class="line"># scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
-
-<p>用哪一个就删去前面的#</p>
-<h4 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h4><p>下载</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-
-<p>根目录的config.yml</p>
-<p>在底部添加如下设置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
-
-<p>主题文件夹config.yml</p>
-<p>打开<code>Local Search</code>功能</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: false</span><br><span class="line">  # If auto, trigger search by changing input.</span><br><span class="line">  # If manual, trigger search by pressing enter key or search button.</span><br><span class="line">  trigger: auto</span><br><span class="line">  # Show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # Unescape html strings to the readable one.</span><br><span class="line">  unescape: false</span><br><span class="line">  # Preload the search data when the page loads.</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure>
-
-<h4 id="字数"><a href="#字数" class="headerlink" title="字数"></a>字数</h4><p>安装</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-word-counter</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>配置 根目录config.yml 在文件尾部添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br><span class="line">  exclude_codeblock: false</span><br><span class="line">  awl: 4</span><br><span class="line">  wpm: 275</span><br><span class="line">  suffix: &quot;mins.&quot;</span><br></pre></td></tr></table></figure>
-
-<p>主题config.yml</p>
-<p>修改</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_total: false</span><br></pre></td></tr></table></figure>
-
-<p>设置item_text_total为true</p>
-<h4 id="文章阅读次数"><a href="#文章阅读次数" class="headerlink" title="文章阅读次数"></a>文章阅读次数</h4><p>修改 主题_config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Show Views/Visitors of the website/page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br><span class="line">    total_visitors: true</span><br><span class="line">    total_visitors_icon: user</span><br><span class="line">    total_views: true</span><br><span class="line">    total_views_icon: eye</span><br><span class="line">    post_views: true</span><br><span class="line">    post_views_icon: eye</span><br></pre></td></tr></table></figure>
-
-<p>设置enable为true即可。</p>
-]]></content>
+    <title>免费搭建Umami</title>
+    <url>/2024/08/06/%E5%85%8D%E8%B4%B9Umami%E6%90%AD%E5%BB%BA%20/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1>]]></content>
       <categories>
         <category>网站</category>
       </categories>
       <tags>
-        <tag>NexT</tag>
-        <tag>美化</tag>
+        <tag>网站</tag>
       </tags>
   </entry>
   <entry>
@@ -190,17 +201,6 @@
       <tags>
         <tag>innosetup</tag>
         <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>免费搭建Umami</title>
-    <url>/2024/08/06/%E5%85%8D%E8%B4%B9Umami%E6%90%AD%E5%BB%BA%20/</url>
-    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
       </tags>
   </entry>
   <entry>
